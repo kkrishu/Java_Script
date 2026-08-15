@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="form-container">
+  <h2>NEW CALL</h2>
+
+  <form>
+    <label>Image URL</label>
+    <input required type="text" name="image" placeholder="Enter Image URL">
+
+    <label>Full Name</label>
+    <input required type="text" name="name" placeholder="Enter Full Name">
+
+    <label>Home Town</label>
+    <input required type="text" name="town" placeholder="Enter Home Town">
+
+    <label>Purpose</label>
+    <input required type="text" name="purpose" placeholder="eg., Quick appointment note">
+
+    <label>Category</label>
+
+    <label><input required type="radio" name="category"><span>Emergency</span></label>
+    <label><input type="radio" name="category"><span>Important</span></label>
+    <label><input type="radio" name="category"><span>Urgent</span></label>
+    <label><input type="radio" name="category"><span>No Rush</span></label>
+
+    <button type="submit">Create Note</button>
+  </form>
+
+  <button class="CloseForm">Close</button>
+</div>
+
+
+<div class="note-container">
+
+  <!-- LEFT ICONS -->
+  <div class="left-icons">
+    <button id="add-note"><i class="ri-add-line"></i></button>
+    <button><i class="ri-arrow-up-line"></i></button>
+    <button><i class="ri-arrow-down-line"></i></button>
+  </div>
+
+  <!-- STACK -->
+  <div class="notes">
+
+    <!-- CARD 1 -->
+    <div class="note-card">
+      <div class="profile">
+        <img src="https://plus.unsplash.com/premium_photo-1689551671541-31a345ce6ae0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D">
+      </div>
+
+      <h2 class="name">Fatima Uma</h2>
+
+      <div class="info">
+        <span>Home town</span>
+        <span>Singapore</span>
+      </div>
+
+      <div class="info">
+        <span>Bookings</span>
+        <span>3 times</span>
+      </div>
+
+      <div class="actions">
+        <button class="call-btn">Call</button>
+        <button class="msg-btn">Message</button>
+      </div>
+
+      <div class="tags">
+        <div class="tag black"></div>
+        <div class="tag purple"></div>
+        <div class="tag orange"></div>
+        <div class="tag green"></div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="note-card">
+      <div class="profile">
+        <img src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D">
+      </div>
+
+      <h2 class="name">John Doe</h2>
+
+      <div class="info">
+        <span>Home town</span>
+        <span>London</span>
+      </div>
+
+      <div class="info">
+        <span>Bookings</span>
+        <span>5 times</span>
+      </div>
+
+      <div class="actions">
+        <button class="call-btn">Call</button>
+        <button class="msg-btn">Message</button>
+      </div>
+
+      <div class="tags">
+        <div class="tag black"></div>
+        <div class="tag purple"></div>
+        <div class="tag orange"></div>
+        <div class="tag green"></div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="note-card">
+      <div class="profile">
+        <img src="https://plus.unsplash.com/premium_photo-1673757119677-6445b73a405e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxwZXJzb258ZW58MHx8MHx8fDA%3D">
+      </div>
+
+      <h2 class="name">Emma Watson</h2>
+
+      <div class="info">
+        <span>Home town</span>
+        <span>Paris</span>
+      </div>
+
+      <div class="info">
+        <span>Bookings</span>
+        <span>2 times</span>
+      </div>
+
+      <div class="actions">
+        <button class="call-btn">Call</button>
+        <button class="msg-btn">Message</button>
+      </div>
+
+      <div class="tags">
+        <div class="tag black"></div>
+        <div class="tag purple"></div>
+        <div class="tag orange"></div>
+        <div class="tag green"></div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="note-card">
+      <div class="profile">
+        <img src="https://plus.unsplash.com/premium_photo-1664536392779-049ba8fde933?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA5fHxwZXJzb258ZW58MHx8MHx8fDA%3D">
+      </div>
+
+      <h2 class="name">Alex Smith</h2>
+
+      <div class="info">
+        <span>Home town</span>
+        <span>Dubai</span>
+      </div>
+
+      <div class="info">
+        <span>Bookings</span>
+        <span>7 times</span>
+      </div>
+
+      <div class="actions">
+        <button class="call-btn">Call</button>
+        <button class="msg-btn">Message</button>
+      </div>
+
+      <div class="tags">
+        <div class="tag black"></div>
+        <div class="tag purple"></div>
+        <div class="tag orange"></div>
+        <div class="tag green"></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- <div class="form-container">
+        <h2>NEW CALL</h2>
+        <form>
+            <label>Image URL</label>
+            <input required type="text" placeholder="Enter Image URL">
+
+            <label>Full Name</label>
+            <input required type="text" placeholder="Enter Full Name">
+
+            <label>Home Town</label>
+            <input required type="text" placeholder="Enter Home Town">
+
+            <label>Purpose</label>
+            <input required type="text" placeholder="eg.,Quick appointment note">
+
+            <label>Category</label>
+            <label>
+                <input required type="radio" name="Category" value="Urgent" id="">
+                <span>Emergency</span>
+            </label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="Category" value="No-Rush">
+            </label>
+
+            <button type="submit">Create Note</button>
+
+        </form>
+        <button class="CloseForm">Close</button>
+    </div>
+    <div class="note-container">
+        <div class="left-icons">
+            <button id="add-note"><i class="ri-add-line"></i></button>
+            <button><i class="ri-arrow-up-line"></i></button>
+            <button><i class="ri-arrow-down-line"></i></button>
+        </div>
+    </div>
+ -->
+
+
+<!-- <div class="wrapper">
+
+        <input id="searchInput" type="text" placeholder="Search users...">
+
+        <div class="cards-container"></div>
+
+    </div> -->
+    
+
+
+<!-- <div class="flex flex-col gap-10 items-center">
+        <input class="px-5 py-5 rounded outline-none bg-[#111]" type="text" placeholder="Search...">
+        <div class="flex gap-10">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1696247139933-bdbe04c9b4db?q=80&w=1040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="bg-img">
+
+                <div class="bllurred-layer"></div>
+
+                <div class="content">
+                    <h3>User 123</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos modi nam error nisi.</p>
+                </div>
+                
+            </div>
+        </div>
+
+    </div> -->
+
+
+
+<!-- <div class="light">
+        <div class="container">
+            <h1>Theme preference</h1>
+            <button id="toggleTheme">Toggle Theme</button>
+        </div>
+    </div> -->
+
+
+
+<!-- <div id="main">
+        <form action="">
+            <input type="text" placeholder="Profil Pic">
+            <input type="text" placeholder="name">
+            <input type="text" placeholder="Occupation">
+            <input type="text" placeholder="info">
+           
+            <input type="submit">   
+        </form>
+    </div> -->
+    <!-- <div id="card">
+            <div id="box"></div>
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div> 
+    </div> -->
+    <!-- <div id="main">
+        <div id="nav">
+            <a href="">home</a><a href="">about</a>
+            <button>click & follow</button>
+
+        </div>
+    </div> -->
+    <!-- <ul>
+        <li>apple</li>
+        <li>guava</li>
+        <li>grapes</li>
+        <li>banana</li>
+        <li>mango</li>
+    </ul> -->
+    <!-- <div class="a">
+        <div class="b">
+            <div class="c">
+                <button>Click Me</button>
+            </div>
+        </div>
+    </div> -->
+    <!-- <input type="text" placeholder="write anything">
+    <h1>Characters Left:  <span>20</span></h1> -->
+
+
+
+<!-- <form>
+        <input pattern="[a-z]{3,8}" required type="text" id="name" placeholder="name">
+        <div id="hide">
+            <br><br>
+            <small>Your Name should be grater than 2 characters</small>
+        </div>
+        <br><br>
+        <input type="email" placeholder="email id">
+        <br><br>
+        <input type="password" placeholder="password">
+        <br><br>
+        <select>
+            <option value="male">Male</option>
+            <option value="male">Female</option>
+            <option value="male">Others</option>
+        </select>
+        <br><br>
+        <textarea name="" id="" placeholder="Tell us about Yourself..!!"></textarea>
+        <br><br>
+        <input type="submit">
+    </form> -->
+
+
+<!-- email Validator -->
+
+<!-- <div class="container">
+
+        <h2>Email & Password Validator</h2>
+
+        <form autocomplete="on">
+
+        <input type="text" id="email" placeholder="Enter Email">
+        <small id="emailError">Enter valid email</small>
+
+        <input type="password" id="password" placeholder="Enter Password">
+        <small id="passwordError">Password must be 6+ characters</small>
+
+        <button type="submit">Submit</button>
+
+        </form>
+        
+        <div id="Resultmesg"></div>
+
+    </div> -->
+
+
+<!-- downloader progress bar -->
+
+<!-- <div class="glass-card">
+
+        <h2>Downloading...</h2>
+
+        <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="percent" id="percentText">0%</div>
+
+    </div> -->
